@@ -1,0 +1,15 @@
+.fx {
+    display: flex;
+
+    &-i {
+        display: flex !important;
+    }
+
+    &-row {
+        flex-direction: row;
+    }
+
+    &-col {
+        flex-direction: column;    
+    }
+}

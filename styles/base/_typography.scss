@@ -1,0 +1,39 @@
+// USED FONT WEIGHTS
+$weights: 300, 400, 500, 600, 700, 800;
+
+// @FONT-FACE RULES
+@each $weight in $weights {
+    @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: $weight;
+        src: local(''), url('/fonts/poppins-v15-latin-ext_latin-#{$weight}.woff2') format('woff2');
+    }
+}
+
+// FONT WEIGHTS AS CLASSES
+@each $weight in $weights {
+    .font-w-#{$weight} {
+        font-weight: $weight;
+    }
+}
+
+// FONT SIZES AS CLASSES
+$sizes: 15, 16, 17, 18, 19, 20, 28;
+
+@each $size in $sizes {
+    .font-s-#{$size} {
+        font-size: #{$size}px;
+    }
+}
+
+.text {
+
+    &-left {
+        text-align: left;
+    }
+
+    &-center {
+        text-align: center;
+    }
+}
