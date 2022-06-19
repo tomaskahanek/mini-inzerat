@@ -19,7 +19,7 @@ $weights: 300, 400, 500, 600, 700, 800;
 }
 
 // FONT SIZES AS CLASSES
-$sizes: 15, 16, 17, 18, 19, 20, 28;
+$sizes: 15, 16, 17, 18, 19, 23, 45, 60;
 
 @each $size in $sizes {
     .font-s-#{$size} {
@@ -35,5 +35,12 @@ $sizes: 15, 16, 17, 18, 19, 20, 28;
 
     &-center {
         text-align: center;
+    }
+}
+
+.line-h {
+
+    &-1 {
+        line-height: 1;
     }
 }

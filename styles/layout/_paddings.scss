@@ -1,0 +1,7 @@
+$padding-all: 30;
+
+@each $size in $padding-all {
+    .p-#{$size} {
+        padding: #{$size}px;
+    }
+}

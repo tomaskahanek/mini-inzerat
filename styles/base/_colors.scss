@@ -1,0 +1,17 @@
+.color {
+
+    &-white {
+        color: #fff;
+    }
+}
+
+.back {
+
+    &-black {
+        background-color: #000;
+
+        &-trans {
+            background-color: rgba(0,0,0,0.5);
+        }
+    }
+}

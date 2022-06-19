@@ -1,0 +1,109 @@
+$primary-color: #d5ae86;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fbfbfb;
+    color: #1a1a1a;
+}
+
+section {
+    padding: 0 15px;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/mini-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    h1 {
+        border: 10px solid #fff;
+        border-radius: 20px;
+    }
+
+    .scrolldown-btn {
+        width: 50px;
+        height: 100px;
+        position: absolute;
+        left: 50%;
+        bottom: 45px;
+        transform: translateX(-50%);
+        text-align: center;
+    
+        svg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+
+            path {
+
+                &.first-path {
+                    animation: scrollanim 1s ease-in-out infinite;
+                    animation-delay: 0.8s
+                }
+                
+                &.second-path {
+                    animation: scrollanim2 1s ease-in-out infinite;
+                }
+            }
+        }
+    }
+      
+    @keyframes scrollanim {
+    
+        0% {
+            transform: translate(0, -40px);
+            opacity: 0;
+        }
+        60% {
+            transform: translate(0, 0);
+            opacity: 0.8;
+        }
+    }
+    
+    @keyframes scrollanim2 {
+        0% {
+            transform: translate(0, -40px);
+            opacity: 0;
+        }
+        60% {
+            transform: translate(0, 0px);
+            opacity: 0.6;
+        }
+    };
+}
+
+p + p {
+    margin-top: 15px;
+}
+
+a, a:visited {
+    color: $primary-color;
+}
+
+h2 {
+    position: relative;
+    padding-left: 25px;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 6px;
+        left: 0;
+        background-color: $primary-color;
+        width: 7px;
+        height: 32px;
+    
+    }
+}
+
+.gallery-1, .gallery-2 {
+
+    a {
+        max-height: 310px;
+        overflow-y: hidden;
+    }
+}

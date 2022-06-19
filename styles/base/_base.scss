@@ -1,14 +1,16 @@
 body {
     margin: 0;
     padding: 0;
-    line-height: 1.5;
-    font-family: 'Poppins', sans-serif;
 }
 
 .max-width {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+
+    &-415 {
+        max-width: 415px;
+    }
 
     &-900 {
         max-width: 900px;

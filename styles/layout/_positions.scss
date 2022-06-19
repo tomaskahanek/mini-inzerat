@@ -1,0 +1,29 @@
+.pos {
+
+    &-rel {
+        position: relative;
+    }
+
+    &-abs {
+        position: absolute;
+    }
+}
+
+.center {
+
+    &-w {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &-h {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &-wh {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
