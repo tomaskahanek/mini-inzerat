@@ -1,5 +1,5 @@
 // FONT SIZES AS CLASSES
-$margin-top: 15, 30;
+$margin-top: 15, 30, 45;
 
 @each $size in $margin-top {
     .m-t-#{$size} {

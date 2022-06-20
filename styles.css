@@ -108,6 +108,8 @@ input, button, textarea, select { font: inherit; }
 
 .m-t-30 { margin-top: 30px; }
 
+.m-t-45 { margin-top: 45px; }
+
 .m-b-10 { margin-bottom: 10px; }
 
 .m-b-30 { margin-bottom: 30px; }
@@ -164,10 +166,12 @@ header .scrolldown-btn svg path.second-path { animation: scrollanim2 1s ease-in-
 
 p + p { margin-top: 15px; }
 
-a, a:visited { color: #d5ae86; }
+a, a:visited { color: #d5ae86; font-weight: 700; }
 
 h2 { position: relative; padding-left: 25px; }
 
 h2::before { content: ''; display: block; position: absolute; top: 6px; left: 0; background-color: #d5ae86; width: 7px; height: 32px; }
+
+h3 { display: inline-block; border-bottom: 8px solid #d5ae86; }
 
 .gallery-1 a, .gallery-2 a { max-height: 310px; overflow-y: hidden; }

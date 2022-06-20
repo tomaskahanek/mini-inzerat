@@ -81,6 +81,7 @@ p + p {
 
 a, a:visited {
     color: $primary-color;
+    font-weight: 700;
 }
 
 h2 {
@@ -98,6 +99,11 @@ h2 {
         height: 32px;
     
     }
+}
+
+h3 {
+    display: inline-block;
+    border-bottom: 8px solid $primary-color;
 }
 
 .gallery-1, .gallery-2 {
